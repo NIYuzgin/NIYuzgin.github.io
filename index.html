@@ -10,32 +10,42 @@
     <!-- Область просмотра в адаптивном дизайне -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Подключаем внешнюю таблицу стилей -->
-     <link rel="stylesheet" type= "text/css" href="style.css">
+     <link rel="stylesheet" type= "text/css" href="styles.css">
     <!-- Подключаем сценарии -->
      <script src="script.js"></script>
-       <!-- Задаем заголовок документа -->
+     
+     <!-- Cообщаем браузеру Internet Explorer как отображать документ -->
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+     <!-- Задаем заголовок документа -->
     <title>Главная</title>
-</head>
 
+<style>
+
+h1 {color: blueviolet; }
+
+</style>  
+
+
+
+</head>
 <body>
     <!-- шапка документа -->
     <header>
-        <h1>WEB-технологии</h1>
-        <div class="container"> 
+        <h1 class = "simple">WEB-технологии</h1> 
         <nav>
-            <ul>
-                <li><a href="index.html">На главную</a></li>
+            <ol>
                 <li><a href="login.html">Авторизация</a></li>
-                <li><a href="conf_reg.html">Регистрация на конференцию</a></li>
                 <li><a href="">Фотогалерея</a></li>
                 <li><a href="">Сообщения</a></li>
                 <li><a href="">Верстка по макету</a></li>
-            </ul>
+            </ol>
+            <h2 class="heading1 fz20">Еще одна халтура</h2> 
+
+
         </nav>
-        </div>
     </header>
     <main>
-        <div class="container">
         <h1>Пример html - страницы</h1>
         <section>
             Секция 1
@@ -66,28 +76,71 @@
                 </tr>
                 </tr>
             </table>
-           
-        </section>
-        <p>
+          </section>
+        
+          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam atque velit, est accusantium officiis delectus ad, consequuntur, qui incidunt minima aspernatur laboriosam id esse labore debitis eaque pariatur quam aut?
         </p>
-        <img src="img/131sad31q.png" alt="деньги">
+        <img src="images/деньги.png" width="80" alt = "деньги">
         <div>
            <a href="https://www.wildberries.ru/catalog/131170978/detail.aspx?targetUrl=PB">покупка БП</a>
            <div>
             <a href="pages/galary.html">Галерея</a>
            </div>
         </div>
-    </div>
+        <hr />
+
+        <div>
+            <a class = "hyper" href="https://dzen.ru/pogoda/obninsk?lat=55.100412&lon=36.609655">Погода в Обнинске</a>
+            
+
+        </div>
+        <hr />
+
+
     </main>
     <aside>
         Это боковая панель ;)
     </aside>
+    <h4>Еще одна ХРЕНЬ</h4> 
+
+    <q class = "simple">  Хосподи!</q>
+
+<!-- <form name = "My Form" action="/wp-content/themes/cloudi/mail.php" method="post">
+<p><input name = "name" type = "text">Ваше имя</p>
+<p><input name = "email" type = "text">Электронная почта</p>
+<p><input name = "sub" type = "text">Тема сообщения</p>
+<p>Текст сообщения:<br><textarea name="body" cols="10" rows="5"></textarea></p>
+<p><input value = "Отправить" type = "submit"></p> 
+</form>-->
+
+<form action="formdata.php" method="post" name="form1">
+<p>
+    <label>Введите Ваше имя (макс. 10 символов):
+        <input type="text" name = "name" size="30" maxlength="10">
+
+    </label>
+</br>
+    <label>Введите пароль (мин. 10 символов):
+        <input type="password" name = "name" size="30" minlength="10">
+
+    </label>
+
+
+</p>
+
+</form>
+
+
+
+
+
+
+
     <!-- подвал --> 
     <footer>
-        <div class="container">
-        <h3> 2022-2023 учебный год</h3>
-        </div>
+        <h3 id = "heading" style="color: brown;"> 2022-2023 учебный год</h3>
     </footer>
 </body>
 </html>
+

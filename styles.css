@@ -1,0 +1,56 @@
+
+
+
+
+p {
+color: red;
+}
+h2 {
+    color: blue;
+}
+
+.heading1 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.fz20 {
+    font-size: 20px;
+}
+
+#heading {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+q {
+   color: blue;
+}
+q.simple {
+    color: aqua;
+}
+
+body q.simple {
+    color: fuchsia;
+}
+.hyper {
+    color: black;
+    text-decoration: none;
+    
+
+}
+div a:hover {
+color: red;
+
+}
+
+div a:visited {
+    color: aqua;
+}
+
+a:active {
+    color: green;
+}
+a:focus {
+    font-weight: bold;
+}
